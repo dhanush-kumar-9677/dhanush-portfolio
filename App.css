@@ -1,0 +1,238 @@
+.container-fluid{
+  color: white;
+  height: 100%;
+  position: fixed;
+  background-image: url('https://www.shutterstock.com/shutterstock/photos/2281284523/display_1500/stock-vector-abstract-white-background-minimal-geometric-white-light-background-abstract-design-2281284523.jpg');
+ 
+}
+.profile-img{
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+ position: relative;
+ left: 70px;
+ top: 30px;
+transition: 1s;
+}
+.profile-img:hover{
+  transform: scale(1.1);
+ box-shadow: 0px 0px 3px 3px lightblue;
+}
+.nav1{
+ width: 100%; 
+ height: 50px;
+
+
+}
+
+.home, .skill, .project, .about, .contact{
+  text-decoration: none;
+  position: relative;
+  left: 55%;
+  padding-left: 30px;
+  top:-30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  transition: 1s;
+  font-size: 16px;
+}
+.home:hover, .skill:hover, .project:hover, .about:hover, .contact:hover{
+  transform: scale(1.1);
+  color: green;
+}
+
+.btnhome{
+   background-color:lightgreen;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   border-radius: 5px;
+   font-size: 18px;
+   position: relative;
+   top: 30px;
+   transition: 1s;
+}
+.btnhome:hover{
+ 
+  background-color:green;
+}
+footer{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: small;
+ color:gray;
+ position: relative;
+ top: 110px;
+}
+
+.profile-details{
+  font-family: cursive;
+ color: black;
+position: relative;
+top: 30px;
+}
+.cons{
+  color: #1a1717;
+}
+.icon1, .icon2, .icon3, .icon4{
+  position: relative;
+  top: 110px;
+}
+.icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover{
+  color: green;
+ 
+  
+}
+.skill-img, .project-img, .about-img, .contact-img{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  bottom: 1px;
+  
+}
+
+
+
+
+
+/* resume page css */
+.resume{
+  width: 360px;
+  height: 100%;
+}
+
+/* this is about page */
+.about-details{
+  position: relative;
+  left: 10%;
+  color: white;
+  font-family: cursive;
+  top: 10%;
+  background-color: #434343;
+  width: 50%;
+  border-radius: 10px;
+}
+.about-details:hover{
+  background-color: #1a1717;
+  border-radius: 10px;
+}
+/* this page is Skill.js */
+.tech-skill{
+  position: relative;
+  left: 10%;
+  color: white;
+  font-family: cursive;
+  top: 5%;
+  background-color: #434343;
+  padding: 5px;
+  border-radius: 10px;
+  width: 50%;
+}
+.tech-skill:hover{
+  background-color: #1a1717;
+}
+
+/* this is mobile screen size modified */
+
+@media only screen and (max-width:768px) and (min-width:360px){
+  .container-fluid{
+    position: relative;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color:white;
+  }
+  body{
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+  }
+  .home, .skill, .project, .about, .contact{
+    text-decoration: none;
+    position: relative;
+    left: 2%;
+    padding: 10px;
+    background-color: #434343;
+    color: lightgreen;
+    /* top: 3%; */
+    
+  }
+ 
+  .profile-details{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 64%;
+    right: 15%;
+    color: blanchedalmond;
+    background-color: #434343;
+    transition: 1s;
+    border-radius: 10px;
+  }
+  .profile-details:hover{
+    background-color: #1a1717;
+    border: lightgreen;
+  }
+  .profile-img{
+   width:180px ;
+   height: 200px;
+   background-color: #434343;
+   position: relative;
+  left: 80%;
+   transition: 1s;
+   top: -60px;
+  }
+  .profile-img:hover{
+    transform: scale(1.1);
+  }
+  .btnhome{
+    position: absolute;
+    top: 65%;
+    width: auto;
+    height: 30px;
+  }
+  footer{
+    position: relative;
+    top:380px;
+    color: lightgreen;
+    background-color: #434343;
+  }
+  .icon1, .icon2, .icon3, .icon4{
+    color: rgb(41, 219, 121);
+    /* background-color: gray; */
+    position: relative;
+    top: 390px;
+    transition: 1s;
+  }
+  .icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover{
+    color: hotpink;
+  }
+  .skill-img, .project-img, .about-img, .contact-img{
+   display: none;
+  }
+/* this is about */
+.about-details{
+  width:80% ;
+   height: 84%;
+   background-color: #434343;
+   position: relative;
+   right: 10%;
+   transition: 1s;
+   top: 60px;
+   color: white;
+   border-radius: 10px;
+   padding: 3px;
+}
+.about-details:hover{
+  background-color: #1a1717;
+}
+/* this page is skill */
+.tech-skill{
+  width:80% ;
+   height: 84%;
+   background-color: #434343;
+   position: relative;
+   right: 10%;
+   transition: 1s;
+   top: 60px;
+   color: white;
+   border-radius: 10px;
+   padding: 3px;
+}
+.tech-skill:hover{
+  background-color: #1a1717;
+}
+}
